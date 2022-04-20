@@ -1,4 +1,4 @@
-# A-level FE Homeworks'21-22
+# A-level FE Homeworks 2022
 
 The main **purpose** of this repo is to gather in one place homeworks and improve our git skills.
 
