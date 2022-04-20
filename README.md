@@ -19,11 +19,11 @@ The main **purpose** of this repo is to gather in one place homeworks and improv
    - create new folder for the current task and add your code there. Also add `README.md` file along with your files
    - push your code to the remote repo (`git push`)
    - create new Pull Request (PR) throw **GitHub web-interface** ![PR](https://github.com/Temu4/a-level-fe-homeworks-2022/blob/main/img/pr.png)
-   - make sure to resolve any merge conflicts if any 🪲
+   - make sure you have resolved all merge conflicts if any 🪲
 
 3. **When your PR was created:**
-   - ping me for review in some messenger (tg or ista)
-   - wait for review (it can take some time)
-   - make changes, until your code will be approved and merged
+   - ping me for a review in some messenger (tg or ista)
+   - wait for a review (it can take some time)
+   - make required changes, until your code will be approved and merged
 
 Please don't hesitate to reach me out for any questions 📫.
