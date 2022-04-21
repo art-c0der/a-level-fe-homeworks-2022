@@ -15,8 +15,8 @@ The main **purpose** of this repo is to gather in one place homeworks and improv
 2. **Add code with your task:**
 
    - make sure you are on `main` branch and have the latest updates (`git checkout main` and `git pull upstream main`)
-   - create a branch for your code (`git checkout -b your-branch-name`). Name it related with homework task, e.g. `hw-1` for 1th homework. All new branches must be created from `main` branch
-   - create new folder for the current task using the same approach as for branching (for example, `hw-1` for 1th homework) and add your code there. Also add `README.md` file along with your files
+   - create a branch for your code (`git checkout -b your-branch-name`). Name it related with homework task, e.g. `hw-1` for the 1th homework. All new branches must be created from `main` branch
+   - create new folder for the current task using the same approach as for branching (for example, `hw-1` for the 1th homework) and add your code there.
    - push your code to the remote repo (`git push`)
    - create new Pull Request (PR) throw **GitHub web-interface** ![PR](https://github.com/Temu4/a-level-fe-homeworks-2022/blob/main/img/pr.png)
    - make sure you have resolved all merge conflicts if any 🪲
