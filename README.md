@@ -9,7 +9,7 @@ The main **purpose** of this repo is to gather in one place homeworks and improv
    - fork current repo to your profile ![Fork button](https://github.com/Temu4/a-level-fe-homeworks-2022/blob/main/img/fork-repo.png)
    - clone your forked repo to your local machine (`git clone https://github.com/YOUR_USERNAME/a-level-fe-homeworks-2022`)
    - open the current folder (`cd ./a-level-fe-homeworks-2022`)
-   - connect this repository as an upstream to your local (`git remote add upstream https://github.com/kottans/a-level-fe-homeworks-2022.git`)
+   - connect this repository as an upstream to your local (`git remote add upstream https://github.com/Temu4/a-level-fe-homeworks-2022.git`)
    - in your local repository, add a folder with your github name inside `students` folder (_if you don't have_). For example, it should look like `students/temu4/`. ❗❗❗ **All changes you make must be in your folder**
 
 2. **Add code with your task:**
