@@ -1,4 +1,1 @@
-
 alert('Warning!')
-/n
-
