@@ -1,1 +1,1 @@
-alert('My first homework!')
+alert('My first homework!');
