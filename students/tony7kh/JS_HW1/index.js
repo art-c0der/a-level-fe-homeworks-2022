@@ -1,1 +1,1 @@
-alert('Using second option for including JS')
+alert('Using second option for including JS');
