@@ -1,0 +1,1 @@
+First homework of the resumed JS course
