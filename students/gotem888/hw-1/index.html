@@ -18,9 +18,10 @@
       <button id="minus" class="minus">MINUS</button>
     </div>
     <script>
+      let n = 0;
       const plus = document.getElementById("plus");
       plus.addEventListener("click", (e) => {
-        e.target = n++;
+        n++;
         document.getElementById("sum").innerHTML = n;
       });
     </script>
