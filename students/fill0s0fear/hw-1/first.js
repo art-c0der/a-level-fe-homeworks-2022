@@ -15,7 +15,7 @@ for (let i = 0; i < str.length; i++) {
       count: currentCount,
       name: currentNumber
     } : null;
-  } 
+  }
   else {
     currentNumber = str[i];
     currentCount ? currentCount = 1 : null;
