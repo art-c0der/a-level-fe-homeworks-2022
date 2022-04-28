@@ -1,4 +1,4 @@
-let str = prompt('Enter a text');
+const str = prompt('Enter a text');
 let maxRow = {
   count: 0,
   name: ''
