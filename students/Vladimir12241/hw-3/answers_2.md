@@ -8,7 +8,7 @@
 8. -1 (despite the fact that the data type is a string, it contains a math. expression)
 9. NaN (object is Not a Number - NaN. If one of arg if NaN all expression is will be NaN)
 10. '1a' (all expression convert to string values ​​were just added )
-11. 1[object...' (all expression convert to string values ​​were just added)
+11. '1[object...' (all expression convert to string values ​​were just added)
 12. ' ' result is an empty string (all expression convert to string values ​​were just added)
 13. NaN (attempt to perform a math. operation not with a number)
 14. NaN (object is NaN...)
