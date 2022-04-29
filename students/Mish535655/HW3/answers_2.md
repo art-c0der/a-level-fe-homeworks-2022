@@ -1,0 +1,15 @@
+1. number + number = number
+2. string + number = string
+3. number + array = string
+4. number + obj = string
+5. number - obj = number
+6. +'a' = NaN number 
+7. +'' = 0 number
+8. +'-1' = -1 number
+9. +{} = NaN number
+10. 1 + 'a' = sting
+11. number + obj = string
+12. [] + [] = '' string
+13. number - string = NaN number
+14. number - obj = NaN number
+15. [] - [] = 0 number
