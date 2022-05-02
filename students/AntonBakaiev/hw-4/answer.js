@@ -17,7 +17,36 @@ let result = searchVowels(initialText)
 alert("Количество гласных: " + result);
 
 
-//  ^[\+]\d{3}\s\d{4}\s\d{2}\s\d{2}$
-//  ^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$
-//  ^[3][4|7]\d{13}$|^[5][1-5]\d{14}$|^[4]\d{15}$
+// регулярные выражения:
+//   телефон ^[\+]\d{3}\s\d{4}\s\d{2}\s\d{2}$
+//   мыло ^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$
+//   кредитка  ^[3][4|7]\d{13}$|^[5][1-5]\d{14}$|^[4]\d{15}$
+
+const validMobilePhone = /^[\+]\d{3}\s\d{4}\s\d{2}\s\d{2}$/;   //valid format: +000 0000 00 00
+const validEMailAddress = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+const validCreditCard = /^[3][4|7]\d{13}$|^[5][1-5]\d{14}$|^[4]\d{15}$/;
+
+let phoneNumber = prompt("Enter your number phone");
+Validation(phoneNumber)
+let mail = prompt("Enter your E-mail ");
+Validation(mail)
+let creditCard = prompt("Enter your number credit card ");
+Validation(creditCard)
+
+function Validation(textForValidation) {
+    if (typeof (textForValidation) === 'string') {
+        if (textForValidation.match(validMobilePhone)) {
+            alert("Your number phone is valid");
+        }
+        else if (textForValidation.match(validEMailAddress)) {
+            alert("Your mail is valid");
+        }
+        else if (textForValidation.match(validCreditCard)) {
+            alert("Your credit card is valid");
+        }
+        else {
+            alert("Your data is not valid,start over")
+        }
+    }
+}
 
