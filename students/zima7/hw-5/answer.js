@@ -21,17 +21,21 @@ const student = {
     age: 20
 };
 
-Object.defineProperties(student, {
-    'toString': {
-        enumerable: false,
-        value: () => `Hello, my name is ${this.name} `
-    },
-    'typeOf': {
-        enumerable: false,
-        value: () => this.age
-    }
-}
-);
+Object.defineProperties(student,
+    {
+        'toString': {
+            enumerable: false,
+            value: function () {
+                return `Hello, my name is ${this.name}`
+            }
+        },
+        'valueOf': {
+            enumerable: false,
+            value: function () {
+                return this.age
+            }
+        }
+    });
 
 console.log(Object.keys(student));
 alert(student);
