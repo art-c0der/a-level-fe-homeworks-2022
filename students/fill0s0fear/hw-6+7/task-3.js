@@ -13,16 +13,18 @@ const weeksDictionary = {
 function checkWeekDay(weekDayNumber) {
     for (const [key, value] of Object.entries(weeksDictionary)) {
         if (weekDayNumber === parseInt(key)) {
-            return `${value} `;
+            return value;
         }
     }
 }
 
 function humanReadableWeek(weekNumbers) {
-    let humanReadableWeeks = '';
+    let humanReadableWeeks = [];
+    let iterator = 0;
 
     for (const i of weekNumbers) {
-        humanReadableWeeks += checkWeekDay(i);
+        humanReadableWeeks[iterator] = checkWeekDay(i);
+        iterator++;
     }
 
     return humanReadableWeeks;
