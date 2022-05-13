@@ -1,5 +1,9 @@
 - Fx
-1. undefined (In this Fx **'a'** is globsal. Global variable that doesn't have a value yet)
+1. undefined (In this Fx **'a'** is globsal. Global variable that doesn't have a value yet.
+In the function itself there is a variable 'a' which, due to its type 'var', overrides 'a' declared in the global field with type 'let'
+
+If ((var a = 5) === (//var a = 5)) then (console.log('1 ', a) === (let a = 1)), but in this case in the function before value declarations (var a); a === undefined
+
 2. NaN (**'b'** is globsal.A global variable that doesn't have a value yet is undefined, undefined is not a number) 
 3. 8 (declared)
 - !undefined === true && !a === true (condition met)
