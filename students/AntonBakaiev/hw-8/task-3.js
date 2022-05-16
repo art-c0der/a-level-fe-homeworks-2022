@@ -10,3 +10,4 @@ console.log(searchSubstringIndex(initialString, 'world'))
 console.log(searchSubstringIndex(initialString, 'o'))
 console.log(searchSubstringIndex(initialString, 'l')) 
 searchSubstringIndex(initialString, 'cat')
+

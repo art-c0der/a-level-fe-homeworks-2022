@@ -7,3 +7,4 @@ const createArraysWithObjects = (...names) => {
 }
 createArraysWithObjects('Joe', 'Anna');
 createArraysWithObjects('Dan', 'July'); 
+
