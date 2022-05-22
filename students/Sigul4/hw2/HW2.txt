@@ -1,0 +1,48 @@
+(1)
+
+1 a = 2
+2 b = und 
+3 с = und 
+
+4 a = 2
+5 b = 5
+6 с = und 
+
+7 a = 7
+8 b = 8
+9 c = und 
+
+10 a = 2
+11 b = 8
+12 с = und 
+
+13 a = 2
+14 b = und 
+15 с = und 
+
+
+(2)
+
+1 number,
+2 number,
+3 number,
+4 string,
+5 string,
+6 bool,
+7 string,
+8 bool,
+9 bool,
+10 bool,
+
+11 bool,
+12 bool,
+13 bool,
+14 bool,
+15 string,
+16 bool,
+17 string,
+18 string,
+19 number,
+20 string,
+
+
