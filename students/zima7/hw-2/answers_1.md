@@ -1,0 +1,15 @@
+1. console.log(a) = 2;
+2. console.log(b) = undefined; // the condition of the if block are false
+3. console.log(c) = error // variable not declared
+4. console.log(a) = 2;
+5. console.log(b) = 5;
+6. console.log(c) = undefined;// variable declared after function call
+7. console.log(a) = 7;// the variable  is overwritten in the if block using const
+8. console.log(b) = 8; // the variable is assigned a new value
+9. console.log(c) = 6; // the variable is overwritten in the if block using var
+10. console.log(a) = 2;// the variable declared by const is bounded in blocks
+11. console.log(b) = 8; 
+12. console.log(c) = 6; 
+10. console.log(a) = 2;
+11. console.log(b) = undefined; // the condition of the if block are false
+12. console.log(c) = 4; 
