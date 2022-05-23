@@ -1,0 +1,312 @@
+* {
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+background-color: #eeeff1;
+}
+
+.wrapper {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #262626;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header-wrap .logo img {
+  height: 55px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding img {
+  height: 55px;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.section-banner {
+  background: #eeeff1;
+  padding: 105px 0 146px;
+}
+
+.banner-row {
+  display: flex;
+  align-items: center;
+}
+
+.banner-col {
+  width: 50%;
+}
+
+.banner-col .title {
+  color: black;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 1.65;
+  margin: 0 auto 42px;
+}
+
+.banner-col p {
+  color: #727272;
+  font-size: 16px;
+  line-height: 1.62;
+  margin-bottom: 85px;
+}
+.banner-col .button {
+  padding: 25px 42px;
+  background: #34547a;
+  max-width: 225px;
+  height: 65px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.1em;
+}
+
+.banner-col .button:hover {
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .section-banner {
+    background: #eeeff1;
+    padding: 35px 0 48px;
+  }
+
+  .banner-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .banner-col {
+    width: 100%;
+  }
+
+  .banner-col .title {
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.65;
+    margin: 20px auto;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .banner-col p {
+    color: #727272;
+    font-size: 16px;
+    line-height: 1.62;
+    margin-bottom: 40px;
+    text-align: justify;
+  }
+  .banner-col .button {
+    padding: 25px 42px;
+    background: #262626;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.1em;
+  }
+  .first-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .second-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .third-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .fourth-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .fifth-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .show {
+    display: flex;
+    visibility: visible;
+  }
+}
+
+@media (min-width: 769px) {
+  .section-banner {
+    background: #eeeff1;
+    padding: 105px 0 146px;
+  }
+
+  .banner-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .banner-col {
+    width: 50%;
+  }
+
+  .banner-col .title {
+    color: black;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.65;
+    margin: 0 auto 42px;
+  }
+
+  .banner-col p {
+    color: #727272;
+    font-size: 24px;
+    line-height: 1.62;
+    margin-bottom: 85px;
+  }
+  .banner-col .button {
+    padding: 25px 42px;
+    background: #262626;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.1em;
+  }
+
+  .banner-col .button:hover {
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+  }
+  .first-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .second-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .third-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .fourth-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .fifth-banner {
+    display: none;
+    visibility: hidden;
+  }
+  .show {
+    display: flex;
+    visibility: visible;
+  }
+}
