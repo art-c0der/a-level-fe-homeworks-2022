@@ -68,7 +68,9 @@ img {
 }
 
 .container {
+  max-width: 1180px;
   padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* _____________________header__________________ */
