@@ -6,7 +6,7 @@ const owlBtn = document.getElementById("owl");
 const hedgehogBtn = document.getElementById("hedgehog");
 const menuToggle = document.getElementById("menu__toggle");
 
-const contentHome = "Smeshariki is a Russian animated series produced by the Petersburg computer animation studio from 2003 to 2012. It was created within the framework of the cultural and educational project 'A World Without Violence'. The animated series marked the beginning of the animated franchise of the same name, which includes several animated series and three full-length cartoons. The production of the first series - 'The Bench', ended in the fall of 2003. However, the first officially released series was Where Does the Old Year Go? In 2004, the regular broadcast of the animated series began on TV channels Russia (now Russia-1; as part of the Good Night, Kids! program) and STS. Back in 2003, the planned number of episodes was announced - 200. Subsequently, this number was expanded by 15 additional episodes filmed on special orders from the Ministry of Health of the Russian Federation, the National Children's Fund and the Radio Plant. A.S. Popov.";
+const contentHome = "Smeshariki is a Russian animated series produced by the Petersburg computer animation studio from 2003 to 2012. It was created within the framework of the cultural and educational project 'A World Without Violence'. The animated series marked the beginning of the animated franchise of the same name, which includes several animated series and three full-length cartoons. The production of the first series - 'The Bench', ended in the fall of 2003. However, the first officially released series was Where Does the Old Year Go? In 2004, the regular broadcast of the animated series began on TV channels Russia (now Russia-1; as part of the Good Night, Kids! program) and STS.";
 const imgSrcNyusha = "img/nyusha.png";
 const nameNyusha = "Nyusha";
 const contentNyusha = "Nyusha is a pink pig with darker hearts on the sides. She has dark pink hooves and red eyeshadow. Every day she walks with a bright red braid, to which a chamomile bow is attached, but sometimes the piggy changes her hairstyle. Despite the fact that she very rarely changes her hairstyles, this does not prevent her from having an extensive wardrobe: various sundresses, shoes, dresses, sunglasses, hats, bows, bracelets. As soon as something becomes fashionable, she buys it.";
@@ -23,7 +23,6 @@ const contentYozhik = "Yozhik is a shy male hedgehog living in the land of Smesh
 loadHomeContent(contentHome);
 
 homeBtn.addEventListener("click", () => {
-  menuToggle.click();
   loadHomeContent(contentHome);
 });
 

@@ -68,7 +68,6 @@ img {
 }
 
 .container {
-  max-width: 1180px;
   padding: 0 15px;
 }
 
@@ -88,7 +87,6 @@ img {
   z-index: 5;
   display: flex;
   flex-grow: 1;
-  max-width: 1150px;
   height: 85px;
   align-items: center;
 }
