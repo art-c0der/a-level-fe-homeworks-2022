@@ -1,1 +1,1 @@
-https://tony7kh.github.io/dom-practice/index.html
+https://tony7kh.github.io/dom-practice-v2/
