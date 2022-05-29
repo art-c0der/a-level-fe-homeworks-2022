@@ -46,7 +46,9 @@ table {
     box-sizing: border-box;
 }
 
-
+body {
+    background-color: antiquewhite;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -63,8 +65,11 @@ table {
     height: 80px;
     flex: 0 0 80px;
     border-radius: 50%;
-    background-color: aqua;
     margin-right: 20px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
 }
 .header__burger {
     display: none;
@@ -72,21 +77,22 @@ table {
 .navigation {
     max-width: 900px;
     width: 100%;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navigation__btn {
     padding: 15px 30px;
-    min-width: 100px;
+    min-width: 150px;
     font-size: 20px;
     line-height: 25px;
     border: 1px solid #999;
     border-radius: 10px;
 }
 .navigation__btn:hover {
-    background-color: bisque;
+    cursor: pointer;
+    background-color: rgb(196, 237, 255);
     transition: all ease-in .5s;
 }
 @media screen and (max-width: 950px) {
@@ -180,30 +186,26 @@ table {
 
 
 .main {
-    height: 100vh;
     max-width: 1400px;
     width: 100%;
     margin: 0 auto;
-    background-color: azure;
 }
 .content {
-    background-color: aquamarine;
     display: none;
     padding: 100px 50px;
 }
 .content__img {
     height: 250px;
     flex: 0 0 250px;
-    background-color: #fff;
     margin-right: 50px;
 }
 .content__img img {
     width: 100%;
+    height: 100%;
 }
 .content__info {
     max-width: 600px;
     width: 100%;
-    background-color: blue;
     display: flex;
     flex-direction: column;
 }
