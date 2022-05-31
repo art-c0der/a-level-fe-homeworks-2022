@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+.main{
+	overflow: hidden;
+	position: relative;
+	height: 100vh;
+	background-color: #A9BB88;
+}
+.main--content__image{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80vh;
+	opacity: 0.9;
+}
+.main--navigation{
+	position: absolute;
+	bottom: 10px;
+	width: 100vw;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	font-family: 'Rubik Mono One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	color: #5E6949;
+	z-index: 2;
+}
+.main--navigation li:hover{
+	text-decoration: underline;
+}
+.main--navigation__link__active{
+  text-decoration: underline;
+}
+.main--content__text{
+	font-family: 'Rubik Mono One';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	text-align: right;
+	color: #434B34;
+	z-index: 2;
+}
+.main--content__text__left{
+	text-align: left;
+}
+.main--content__text__main--info{
+	width: 550px;
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	margin: -160px 0 0 0;
+}
+.main--content__image--clematis{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: 0.8;
+}
+.main--content__image--lathyrus{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: 0.9;
+	height: 96vh;
+}
+.main--content__text__clinging--types{
+	position: absolute;
+	top: 10vh;
+	left: 12vw;
+	animation-duration: 4s;
+    animation-name: fadeout;
+}
+.main--content__text__clinging--info{
+	position: absolute;
+    width: 602px;
+	right: 10vw;
+	top: 45vh;
+	animation-duration: 4s;
+    animation-name: slidein-from-left;
+}
+.main--content__image--hedera{
+	position: absolute;
+	z-index: 1;
+	left: -10vw;
+	bottom: 0;
+	opacity: 0.8;
+}
+.main--content__text__climbing--types{
+	padding: 10vh 4vw 0 0;
+	animation-duration: 4s;
+    animation-name: fadeout;
+}
+.main--content__text__climbing--info{
+	position: absolute;
+	left: 10vw;
+	bottom: 20vh;
+	width: 60vw;
+	animation-duration: 4s;
+    animation-name: slidein-from-right;
+}
+.main--content__image--wisteria{
+	position: absolute;
+	z-index: 1;
+	height: 100vh;
+}
+.main--content__image--lonicera{
+	position: absolute;
+	z-index: 1;
+	height: 100vh;
+	right: 0;
+}
+.main--content__text__curly--info{
+	position: absolute;
+	top: 10vh;
+	text-align: center;
+	padding: 0 15vw;
+	animation-duration: 5s;
+    animation-name: fadeout;
+}
+.main--content__text__curly--types{
+	position: absolute;
+	right: 15vw;
+	bottom: 20vh;
+	animation-duration: 2s;
+    animation-name: fadeout;
+}
+.main--content__text__leaning--types{
+	position: absolute;
+	top: 6vh;
+	left: 12vw;
+	animation-duration: 4s;
+    animation-name: fadeout;
+}
+.main--content__text__leaning--info{
+	position: absolute;
+	right: 13vw;
+	bottom: 20vh;
+	width: 74vw;
+	text-align: center;
+	animation-duration: 4s;
+    animation-name: slidein-from-left;
+}
+.main--content__close{
+  position: absolute;
+  right: 1vh;
+  top: 1vh;
+  width: 6vh;
+  height: 6vh;
+  opacity: 0.3;
+  z-index: 3;
+}
+.main--content__close:hover {
+  opacity: 1;
+}
+.main--content__close:before, .main--content__close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 6vh;
+  width: 3px;
+  background-color: #434B34;
+}
+.main--content__close:before {
+  transform: rotate(45deg);
+}
+.main--content__close:after {
+  transform: rotate(-45deg);
+}
+.main--navigation__button{
+	display: none;
+}
+
+@keyframes slidein-from-right {
+  from {
+    margin-left: 100%;
+    width: 800%;
+	opacity: 0;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slidein-from-left {
+  from {
+	opacity: 0;
+    margin-right: 100%;
+    width: 800%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  .main--navigation, .main--content__text{
+	font-size: 20px;
+	color: #434B34;
+}
+.main--content__image--lonicera{
+	display: none;
+}
+.main--content__image--lathyrus{
+	display: none;
+}
+}
+@media screen and (max-width: 785px) {
+  .main--content__text{
+	  font-size: 18px;
+  }
+  .main--content__image--hedera{
+		opacity: 0.5;
+	}
+}
+@media screen and (max-width: 750px) {
+	.main--content__close{
+		display: none;
+	}
+	.main--navigation__button{
+		color: #434B34;
+		display: block;
+		position: absolute;
+		z-index: 4;
+		right: 0;
+		font-family: 'Rubik Mono One';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 25px;
+		background-color: transparent;
+		border: 0;
+	}
+	.main--navigation{
+		display: none;
+	}
+	.main--navigation__active{
+		background-color: #A9BB88;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		top: 0;
+		right: 0;
+		bottom: auto;
+		padding: 60px 0 30px 30px;
+		text-align: right;
+		width: fit-content;
+		z-index: 3;
+	}
+	.main--content__text__clinging--info{
+		top: auto;
+    width: 70vw;
+	right: 10vw;
+	bottom: 15vh;
+	}
+	.main--content__text__leaning--types{
+	top: 10vh;
+	left: 5vw;
+}
+  
+}
+@media screen and (max-width: 600px) {
+.main--navigation__active{
+		width: 100vw;
+		text-align: center;
+	}
+	.main--content__text{
+	  font-size: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+	.main--content__text__main--info{
+	width: 90vw;
+}
+.main--content__image--wisteria {
+	opacity: 0.6;
+}
+}
+@media screen and (max-width: 400px) {
+.main--content__text__climbing--info{
+	position: absolute;
+	left: 0;
+	text-align: center;
+	width: 100vw;
+}
+.main--content__text__curly--types{
+	position: absolute;
+	right: 0;
+	text-align: center;
+	width: 100vw;
+}
+.main--content__text__leaning--info{
+	position: absolute;
+	right: 5vw;
+	bottom: 5vh;
+	width: 90vw;
+}
+}
