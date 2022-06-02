@@ -1,0 +1,154 @@
+html{
+    box-sizing: border-box;
+} 
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+img {
+
+height: auto;
+  }
+
+body{
+    font-size: 18px;
+    line-height: 1.777;
+    margin: 0;
+
+
+   
+}
+._conteiner {
+ 
+    height: 100%;
+
+    margin: 0 auto;
+  
+    
+
+}
+.header__conteiner{
+    display: flex;
+    align-items: center;
+    background: #BCF1F1;
+}
+
+.header__logo{
+    width: 50%;
+    /* flex-grow: 1; */
+}
+.header__buttons{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+
+}
+.header__button{
+    
+   
+    background: #57F1EE;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.mainContainerContent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin: 50px 10px;
+    
+}
+
+.mainConteinerText{
+    width: 50%;
+
+}
+
+.mainContainerImage{
+    
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 50px;
+}
+
+
+@media (max-width: 800px){
+    .mainContainerContent{
+       
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 10px;
+        
+    }
+    .header__button{
+        margin-top: 25px;
+    }
+
+   
+.header__buttons{
+  display: none;
+    
+}
+
+._mobile{
+    display: flex;
+    flex-direction: column;
+       position: absolute;
+       top: 20%;
+       left: 0%;
+       width: 25%;
+       display: block;
+}
+ 
+
+   
+    .menu__btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+
+}
+
+
+
+
+
+.menu__btn {
+    margin-right: 50px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+
+.menu__btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu__btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.menu__btn._mobile span:nth-of-type(1) {
+    display: none;
+  }
+  .menu__btn._mobile span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .menu__btn._mobile span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+  }
