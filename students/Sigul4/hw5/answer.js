@@ -64,6 +64,11 @@ obj3 = {
 
 joinObjects(obj1, obj2, obj3) // {1: 34, 2: 23, 3: 3422, 4: 223, 5: 7412, 6: 723}
 
+// ********************
+// 
+// superpowerObject
+// 
+// ********************
 
 const student = {
     name: "Peter",
