@@ -1,7 +1,7 @@
 function searchSubstringIndex(initialString,searchingSubstring) {
     const normalizelString = initialString.toLowerCase();
     const normalizeSubstring = searchingSubstring.toLowerCase();
-    let index = normalizelString.indexOf(normalizeSubstring);
+    const index = normalizelString.indexOf(normalizeSubstring);
     if (index >= 0) {
         return index;
     } else return (`There is not '${searchingSubstring}'in the initial string.`)
