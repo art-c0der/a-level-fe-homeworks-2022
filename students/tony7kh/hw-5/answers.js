@@ -23,7 +23,7 @@ Object.defineProperties(student,
     }},
     'valueOf': {
         value: function(){
-            return this.age 
+            return this.age;
         }
     }
     });
