@@ -1,8 +1,5 @@
 const createArraysWithObjects = (...names) => {
-    let resultArray = []
-    names.map((item, index) => {
-        resultArray.push({ 'name': item, 'id': ++index })
-    })
+    const resultArray = names.map((item, index) => ({ 'name': item, 'id': ++index }));
     console.log(resultArray);
 }
 
