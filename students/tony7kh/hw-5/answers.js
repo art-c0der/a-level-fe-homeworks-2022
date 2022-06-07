@@ -6,9 +6,7 @@ console.log(getMaxNumber(2, 0, 5, -1, 3, 10, 4));
 
 
 //Task 2
-const joinObj = (obj1, obj2, ...obj) => {
-    return student = Object.assign({}, obj1, obj2, ...obj)
-};
+const joinObj = (...objects) => Object.assign({}, ...objects);
 console.log(joinObj({name: 'Nike'}, {title: 'boss'}, {age: 30},{position: 'CEO'}, {isDefault: false}));
 
 //Task 3
