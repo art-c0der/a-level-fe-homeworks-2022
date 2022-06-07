@@ -22,7 +22,6 @@ Object.defineProperties(student,
         return `My name is ${this.name} and i'm ${this.age} years old`
     }},
     'valueOf': {
-        enumerable: false,
         value: function(){
             return this.age 
         }
