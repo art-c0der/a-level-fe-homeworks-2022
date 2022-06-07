@@ -4,7 +4,7 @@ function searchSubstringIndex(initialString,searchingSubstring) {
     const index = normalizelString.indexOf(normalizeSubstring);
     if (index >= 0) {
         return index;
-    } else return (`There is not '${searchingSubstring}'in the initial string.`)
+    } else return (`There is not '${searchingSubstring}' in the initial string.`)
 }
 const initialString = 'Hello world';
 
