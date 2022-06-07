@@ -19,7 +19,7 @@ const student = {
 Object.defineProperties(student, 
     {'toString': {
     value: function(){
-        return `My name is ${this.name} and i'm ${this.age} years old`
+        return `My name is ${this.name} and i'm ${this.age} years old`;
     }},
     'valueOf': {
         value: function(){
