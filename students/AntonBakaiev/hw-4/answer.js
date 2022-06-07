@@ -4,8 +4,10 @@ let initialText = prompt('Введите урывок текста');
 function searchVowels(initialText) { 
     let count = 0;
     const vowels = ['a', 'e', 'i', 'o', 'u', 'y']; // проверочный массив гласных 
+
+    const normalizeString = initialText.toLowerCase();
     
-    for (let char of initialText.toLowerCase()) { // берем символ из строки и приводим к строчным буквам что бы не вносить в массив проверки доплнительно заглавные буквы
+    for (let char of normalizeString) { 
         if (vowels.includes(char)) { // проверяем есть ли символ в нашеммассиве для проверки если да то вернет true (выполнится условие)
             count++; 
         }
@@ -26,14 +28,14 @@ const validMobilePhone = /^[\+]\d{3}\s\d{4}\s\d{2}\s\d{2}$/;   //valid format: +
 const validEMailAddress = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
 const validCreditCard = /^[3][4|7]\d{13}$|^[5][1-5]\d{14}$|^[4]\d{15}$/;
 
-let phoneNumber = prompt("Enter your number phone");
-Validation(phoneNumber)
-let mail = prompt("Enter your E-mail ");
-Validation(mail)
-let creditCard = prompt("Enter your number credit card ");
-Validation(creditCard)
+const phoneNumber = prompt("Enter your number phone");
+inputValidation(phoneNumber)
+const mail = prompt("Enter your E-mail ");
+inputValidation(mail)
+const creditCard = prompt("Enter your number credit card ");
+inputValidation(creditCard)
 
-function Validation(textForValidation) {
+function inputValidation(textForValidation) {
     if (typeof (textForValidation) === 'string') {
         if (textForValidation.match(validMobilePhone)) {
             alert("Your number phone is valid");
