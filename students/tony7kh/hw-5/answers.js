@@ -1,5 +1,5 @@
 //Task 1
-const getMaxNumber = (...number) => result = Math.max(...number);
+const getMaxNumber = (...numbers) => Math.max(...numbers);
 console.log(getMaxNumber(2, 0));
 console.log(getMaxNumber(2, 0, 5));
 console.log(getMaxNumber(2, 0, 5, -1, 3, 10, 4));
