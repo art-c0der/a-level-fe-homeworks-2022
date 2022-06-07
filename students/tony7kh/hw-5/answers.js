@@ -18,7 +18,6 @@ const student = {
 
 Object.defineProperties(student, 
     {'toString': {
-    enumerable: false,
     value: function(){
         return `My name is ${this.name} and i'm ${this.age} years old`
     }},
