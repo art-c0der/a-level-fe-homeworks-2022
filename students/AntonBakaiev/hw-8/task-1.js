@@ -1,10 +1,10 @@
 function searchSubstringIndex(initialString,searchingSubstring) {
-    initialString = initialString.toLowerCase();
-    searchingSubstring = searchingSubstring.toLowerCase();
-    let index = initialString.indexOf(searchingSubstring);
+    const normalizeString = initialString.toLowerCase();
+    const normalizeSubstring = searchingSubstring.toLowerCase();
+    const index = normalizeString.indexOf(normalizeSubstring);
     if (index >= 0) {
         return index;
-    } else return (`There is not '${searchingSubstring}'in the initial string.`)
+    } else return (`There is not '${searchSubstring}'in the initial string.`)
 }
 const initialString = 'Hello world';
 
