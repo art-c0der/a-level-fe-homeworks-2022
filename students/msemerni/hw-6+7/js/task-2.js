@@ -6,8 +6,8 @@
 //// z
 
 function outputEnglishLetters1() {
-  let alphabet = 'abcdefghijklmnopqrstuvwxyz';
-  let alphabetArray = Array.from(alphabet)
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const alphabetArray = Array.from(alphabet);
   alphabetArray.forEach(letter =>
     console.log(letter));
 }

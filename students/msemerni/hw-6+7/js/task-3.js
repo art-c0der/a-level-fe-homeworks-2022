@@ -40,11 +40,9 @@ const humanDaysArray = [
 ];
 
 function convertNumberDays2(daysArray, humanDaysArray) {
-  let humanDays = [];
-  daysArray.map((days) => {
-    humanDays.push(humanDaysArray[days - 1])
-  });
-  // console.log(humanDays);
+  let humanDays = daysArray.map((days) => 
+    humanDaysArray[days - 1]
+  );
   return humanDays;
 }
 
