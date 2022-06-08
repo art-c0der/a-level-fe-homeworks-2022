@@ -8,10 +8,8 @@ function searchSubstringAmount1(initialString, searchingSubstring) {
   const regexp = RegExp(searchingSubstring, "gi");
   let result = initialString.match(regexp);
   if (!result) {
-    // console.log(`%cThere is no "${searchingSubstring}" in the initial string`, "color: red;");
     return `There is no "${searchingSubstring}" in the initial string`;
   }
-  // console.log(`%c${result.length}`, "color: green;");
   return result.length;
 }
 
@@ -19,10 +17,8 @@ function searchSubstringAmount1(initialString, searchingSubstring) {
 function searchSubstringAmount2(initialString, searchingSubstring) {
   const result = initialString.split(searchingSubstring).length - 1;
   if (!result) {
-    // console.log(`%cThere is no "${searchingSubstring}" in the initial string`, "color: red;");
     return `There is no "${searchingSubstring}" in the initial string`;
   }
-  // console.log(`%c${result}`, "color: blue;");
   return result;
 }
 
