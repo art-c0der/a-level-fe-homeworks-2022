@@ -146,6 +146,12 @@ main {
   padding: 15px 0 0 0;
 }
 
+.content h2 {
+  padding: 0 0 10px 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .imageDiv {
   width: 300px;
   padding: 45px 30px 30px 30px;
