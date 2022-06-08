@@ -16,7 +16,7 @@ function getMaxNumber1(number1, number2) {
 
 //// 3 numbers
 function getMaxNumber2(number1, number2, number3) {
-  const maxNumber = Math.max(...[number1, number2, number3]);
+  const maxNumber = Math.max(number1, number2, number3);
   return maxNumber;
 }
 
@@ -34,7 +34,7 @@ function getMaxNumber3(number1, number2, number3) {
 
 function getMaxNumber4(number1, number2, number3) {
   const numbersArray = [number1, number2, number3];
-  numbersArray.sort((a, b) => (b - a))
+  numbersArray.sort((a, b) => b - a)
   return numbersArray[0];
 }
 
@@ -106,14 +106,11 @@ Object.defineProperties(student, {
       return this.age;
     },
   },
-});
-
-Object.defineProperties(student, {
   toString: {
     value: function () {
       return `Hello, my name is ${this.name}`;
     },
-  },
+  }
 });
 
 alert(student); // Hello, my name is Anna
