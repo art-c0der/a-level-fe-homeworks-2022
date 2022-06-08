@@ -4,9 +4,8 @@
 //// функція повинна отримувати 1 аргумент (текст для пошуку (string)) 
 //// та повертати в консоль кількість голосних, якщо такі є в тексті;
 
-function searchVowels(string) {
-  string = string.toLowerCase();
-  string = [...string];
+function searchVowels(str) {
+  let string = str.toLowerCase();
   let counter = 0;
 
   for (let i = 0; i < string.length; i++) {
@@ -21,7 +20,7 @@ function searchVowels(string) {
 
 function searchVowelsByRegExp(string) {
   const vowels = /[aoeiuy]/g;
-  let vowelsArray = string.toLowerCase().match(vowels);
+  const vowelsArray = string.toLowerCase().match(vowels);
 
   if (vowelsArray !== null) {
     console.log(vowelsArray.length);
@@ -49,6 +48,6 @@ searchVowelsByRegExp("js");
 
 /^\+\d{3}( )\d{4}(( )\d{2}){2}$/g.test("+000 1111 22 33");
 
-/^\w+([-+.]?\w+)*@\w+([-.]?\w+)*(\.\w{2,6})+$/g.test("misha@gmail.com");
+/^\w+([-+.]?\w+)*@[A-Za-z_]+([-.]?[A-Za-z_]+)*(\.[A-Za-z_]{2,6})+$/g.test("misha@gmail.com");
 
 /(^4\d{15}$)|(^5[1-5]\d{14}$)|(^3[47]\d{13}$)/g.test("4000111222333444");
