@@ -1,5 +1,4 @@
-import { HOMECONTENT } from "./items.js";
-import { EPISODES } from "./items.js";
+import { HOME_CONTENT, EPISODES } from "./items.js";
 
 const contentDiv = document.getElementById("content");
 const homeBtn = document.getElementById("logo-container");
@@ -11,10 +10,10 @@ function loadHomeContent(contentHome) {
     <p>${contentHome.description}</p>`;
 }
 
-loadHomeContent(HOMECONTENT);
+loadHomeContent(HOME_CONTENT);
 
 homeBtn.addEventListener("click", () => {
-  loadHomeContent(HOMECONTENT);
+  loadHomeContent(HOME_CONTENT);
 });
 
 const loadMainContent = (propName) => {
@@ -24,7 +23,7 @@ const loadMainContent = (propName) => {
   <div class = "imageDiv">
     <img class="content__image" src="${EPISODES[propName].imgSrc}" alt="picture of ${EPISODES[propName].title}">
   </div>
-  <div class = "textDiv">
+  <div class="textDiv">
   <h2 class="content__title">${EPISODES[propName].title}</h2>
   <p class="content__description">${EPISODES[propName].description}</p>
   </div>`;

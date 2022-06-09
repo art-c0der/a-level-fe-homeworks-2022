@@ -1,4 +1,4 @@
-export const HOMECONTENT = {
+export const HOME_CONTENT = {
     id: 'homeContent',
     title: 'Smeshariki',
     description:'Smeshariki is a Russian animated series produced by the Petersburg computer animation studio from 2003 to 2012. It was created within the framework of the cultural and educational project "A World Without Violence". The animated series marked the beginning of the animated franchise of the same name, which includes several animated series and three full-length cartoons. The production of the first series - "The Bench", ended in the fall of 2003. However, the first officially released series was Where Does the Old Year Go? In 2004, the regular broadcast of the animated series began on TV channels Russia (now Russia-1; as part of the Good Night, Kids! program) and STS.',
