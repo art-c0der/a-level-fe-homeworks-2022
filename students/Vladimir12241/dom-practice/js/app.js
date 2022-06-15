@@ -6,7 +6,7 @@ class App {
   constructor() {
     this.menu = document.querySelector('#menu-toggle');
     this.contentBox = document.querySelector('#main-content');
-    this.contentMenuList = [];
+    this.contentList = [];
     this.contentTitul = [];
 
     this.menu.addEventListener('change', (e) => {
@@ -23,7 +23,7 @@ class App {
   contentGenerator() {
     turtles.map((item) => {
       new Navigation(item);
-      this.contentMenuList.push(new Content(item));
+      this.contentList.push(new Content(item));
     });
     this.contentTitul.push(new Content(title));
   }
@@ -63,7 +63,7 @@ class App {
         this.printer(this.contentTitul[0]);
       }
     } else {
-      this.contentMenuList.map((item) => {
+      this.contentList.map((item) => {
         if (item.hash === hash) {
           navMenu[item.id - 1].firstChild.classList.add('is-active');
           this.printer(item);
