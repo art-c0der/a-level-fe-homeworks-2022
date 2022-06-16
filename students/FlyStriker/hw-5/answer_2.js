@@ -1,14 +1,17 @@
 
 function joinObjects(){
-
- let result = {};
-
-    for (let i = 0; i < arguments.length; i++){
+// создаем пустой объект
+ 
+let result = {};
+//создаем переменную result, которая будет принимать значение пустого объекта 
+    
+for (let i = 0; i < arguments.length; i++){
         result = {...result, ...arguments[i]}
-    }
+        //запускам цикл который будет проверять каждый объект из массива на наличие в нем пар ключ-значения  
+      }
   console.log (result)
+  // выводим новый объект на экран
 }
 
 console.log(joinObjects({name:'Nike'}, {title:'boss'}, {age:30}, {position: 'CEO'}, {isDefault: false}));
-
-//Тоже использую arguments так как количество обьектов динамично . Так же использовал метод spread для обединения всех обьектов в один путем перебора через цикл
+// выводим на экран новый объект на экран
