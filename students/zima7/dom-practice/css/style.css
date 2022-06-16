@@ -1,12 +1,13 @@
 /* Начало блока header */
-
+body{
+    background: #7e7e8121;;
+}
 .header {
     margin: 0 auto 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px 10px;
-    background-color: #7e7e8121;
 }
 
 .logo {
@@ -63,7 +64,6 @@
     padding: 150px 200px 0;
     justify-content: space-around;
     margin: 0 auto;
-    background-color: #7e7e8121;
 }
 
 .inform__img {
