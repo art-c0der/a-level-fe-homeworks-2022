@@ -135,6 +135,15 @@ img {
     height: auto;
 }
 
+.active-button{
+    background-color: #1e47ff;
+    color: #FFF;
+}
+
+.hide-tab{
+    display: none;
+}
+
 @keyframes gradient {
     0% {
           background-position: 0% 50%;
