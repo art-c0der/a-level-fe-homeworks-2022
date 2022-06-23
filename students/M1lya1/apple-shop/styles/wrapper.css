@@ -1,0 +1,17 @@
+.wrapper {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1025px;
+    width: 100%;
+}
+.wrapper__content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+    max-width: 1024px;
+}

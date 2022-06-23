@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('./styles/header.css');
+@import url('./styles/cart.css');
+@import url('./styles/banner.css');
+@import url('./styles/search.css');
+@import url('./styles/wrapper.css');
+@import url('./styles/aside.css');
+@import url('./styles/card.css');
+@import url('./styles/modal.css');
+@import url('./styles/loader.css');
+
+
+*{
+    box-sizing: border-box;
+}
+body {
+    max-width: 1500px;
+    width: 100%;
+    background: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.is_active {
+    display: flex;
+}
+
+.search__active {
+    display: flex;
+}
+.not__active {
+    display: none;
+}

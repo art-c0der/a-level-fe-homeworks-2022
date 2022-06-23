@@ -1,0 +1,45 @@
+.banner {
+    width: 1025px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+    transition: all 1s;
+    position: relative;
+}
+.carusel {
+    width: 1025px;
+    position: absolute;
+    overflow: hidden;
+    transition: all 1s; 
+}
+.carusel__box {
+    display: flex;
+    flex-wrap: nowrap;
+      width: 12300px;
+      height: 400px;
+     
+      position: relative;
+      transition: all 1s;
+ }
+.carusel__item {
+      
+      width: 1025px;
+      height: 520px;
+      transition: all 1s; 
+}
+.carusel__item img {
+    width: 1025px;
+    height: 520px;
+}
+.carusel__controls-left, .carusel__controls-right {
+      position: absolute;
+      width: 30px;
+      height: 50px;
+      top: 225px;
+      background-color: #b9b1b1;
+       
+}
+.carusel__controls-right {
+      right: 0; 
+}
+  
