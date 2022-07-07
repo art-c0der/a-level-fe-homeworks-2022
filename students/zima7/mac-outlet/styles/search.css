@@ -1,0 +1,22 @@
+.search {
+  width: 1024px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.wreper_input {
+  height: 100%;
+  position: relative;
+}
+.wreper_input::before {
+  content: url(../image/search_icon.png);
+  position: absolute;
+  left: 25px;
+  top: 22px;
+}
+.search_input {
+  width: calc(100% - 70px);
+  height: 100%;
+  padding-left: 70px;
+}
