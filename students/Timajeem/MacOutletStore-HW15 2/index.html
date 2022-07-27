@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MacOutlet</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <a class="header-logo-main" href="">
+              <img src="items/image 1.png">
+            </a>
+            <button id="header-btn" class="header-btn">
+              <div class="icon-block">
+                <img src="img/icons/cart.svg">
+              </div>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <section class="banner" style="background-image: url(img/banners/ipad_air_banner.jpg);">
+          <div class="banner-content">
+              <p class="banner-text">IPad Air</p>
+              <button type="button" class="banner-btn">Add to cart</button>
+          </div>
+          </section>
+          <section id="filter-section" class="filter-section">
+            <div class="text-field">              
+              <div class="text-field__icon text-field__icon_search">
+                <input class="text-field-text" type="text" placeholder="Enter device name...">
+              </div>
+              <button id='text-field__icon-filter' class="text-field__icon-blue text-field__icon-filter">
+                <img src="img/icons/filter.svg">
+              </button>
+              <a href="#">
+                <div class="text-field__icon-blue">
+                <img src="img/icons/settings.svg">
+              </div>
+            </a>
+            </div>
+             <div class="content">
+              <div id="close" class="close">
+                <div class="filter-card">
+                  <div class="filter-container">
+                    <div class="filter-card-price">
+                      <div class="price-heading">
+                        <span>Price</span>
+                        <img id='price-btn' class='price-btn' src="img/icons/arrow_left.svg">
+                      </div>
+                      <div id='price-buy' class="price-buy">
+                        <div class="from-field">
+                          <span>From</span>
+                          <input class="price__input" type="text">
+                        </div>
+                        <div class="to-field">
+                          <span>To</span>
+                          <input class="price__input" type="text">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-card-color">
+                      <div class="color-heading">
+                        <span>Color</span>
+                        <img id='color-btn' class='color-btn' src="img/icons/arrow_left.svg">
+                      </div>
+                      <div id='color-content' class="color-content">
+                        <div class="checkselect">
+                          <div class="first-column">
+                            <label><input type="checkbox" value="Red" onclick="color(this)"><span>Red</span></label>
+                            <label><input type="checkbox" value="Green" onclick="color(this)"><span>Green</span></label>
+                            <label><input type="checkbox" value="Black" onclick="color(this)"><span>Black</span></label>
+                            <label><input type="checkbox" value="White" onclick="color(this)"><span>White</span></label>
+                          </div>
+                          <div class="second-column">
+                            <label><input type="checkbox" value="Blue" onclick="color(this)"><span>Blue</span></label>
+                            <label><input type="checkbox" value="Space Grey" onclick="color(this)"><span>Grey</span></label>
+                            <label><input type="checkbox" value="Gold" onclick="color(this)"><span>Gold</span></label>
+                            <label><input type="checkbox" value="Yellow" onclick="color(this)"><span>Yellow</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-card-memory">
+                      <div class="memory-heading">
+                        <span>Memory</span>
+                        <img id='memory-btn' class='memory-btn' src="img/icons/arrow_left.svg">
+                      </div>
+                      <div id='memory-content' class="memory-content">
+                        <div class="checkselect">
+                          <div class="first-column">
+                            <label><input type="checkbox" value="32" onclick="memory(this)"><span>32 Gb</span></label>
+                            <label><input type="checkbox" value="64" onclick="memory(this)"><span>64 Gb</span></label>
+                            <label><input type="checkbox" value="128" onclick="memory(this)"><span>128 Gb</span></label>
+                            <label><input type="checkbox" value="256" onclick="memory(this)"><span>256 Gb</span></label>
+                          </div>
+                          <div class="second-column">
+                            <label><input type="checkbox" value="512" onclick="memory(this)"><span>512 Gb</span></label>
+                            <label><input type="checkbox" value="1024" onclick="memory(this)"><span>1 TB</span></label>
+                            <label><input type="checkbox" value="2056" onclick="memory(this)"><span>2 TB</span></label>
+                            <label><input type="checkbox" value="4096" onclick="memory(this)"><span>4 TB</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-card-os">
+                      <div class="os-heading">
+                        <span>OS</span>
+                        <img id='os-btn' class='os-btn' src="img/icons/arrow_left.svg">
+                      </div>
+                      <div id='os-content' class="os-content">
+                        <div class="checkselect">
+                          <div class="first-column">
+                            <label><input type="checkbox" value="IOS" onclick="os(this)"><span>IOS</span></label>
+                            <label><input type="checkbox" value="macOS" onclick="os(this)"><span>Mac OS</span></label>
+                            <label><input type="checkbox" value="tvOS" onclick="os(this)"><span>tvOS</span></label>
+                            <label><input type="checkbox" value="Watch OS" onclick="os(this)"><span>Watch OS</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="filter-card-display">
+                      <div class="display-heading">
+                        <span>Displаy</span>
+                        <img id='display-btn' class='display-btn' src="img/icons/arrow_left.svg">
+                      </div>
+                      <div id='display-content' class="display-content">
+                        <div class="checkselect">
+                          <div class="first-column">
+                            <label><input  value="2-5" onclick="filterUpdate('display', event)"><span> 2 - 5 inch</span></label>
+                            <label><input  value="5-7" onclick="filterUpdate('display', event)"><span> 5 - 7 inch</span></label>
+                            <label><input  value="7-12" onclick="filterUpdate('display', event)"><span> 7 - 12 inch</span></label>
+                            <label><input  value="12-16" onclick="filterUpdate('display', event)"><span> 12 - 16 inch</span></label>
+                            <label><input  value="17-999" onclick="filterUpdate('display', event)"><span> 16+ inch</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="cards-container">
+              </div>            
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="js/style.js"></script>
+  </body>
+</html>
