@@ -3,7 +3,7 @@
 3 not found error
 4 2
 5 5
-6 not found error
+6 undefined, because of `var c` in the `if` block
 7 7
 8 8
 9 6
