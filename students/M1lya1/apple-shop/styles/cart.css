@@ -1,0 +1,127 @@
+.cart__title-first {
+    padding: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 7px;
+}
+.cart__title-second {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 19px;
+    color: #767272;
+    margin-bottom: 35px;
+    background: #FFFFFF;
+    
+}
+
+.cart__list {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 430px;
+    height: 260px;
+}
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+.cart__item {
+    width: 430px;
+    height: 130px;
+    display: flex; 
+    background: #FFFFFF;
+    border: 0.5px solid #C4C4C4;
+    
+}
+.cart__img {
+    width: 130px;
+    padding: 15px 5px 15px 25px;
+}
+.cart__img img {
+    width: 100px;
+    height: 100px;
+}
+.cart__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 130px;
+}
+.cart__item-name {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    padding-bottom: 15px;
+}
+
+.cart__item-price {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #4191FF;
+}
+.cart__buttons {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    align-items: center;
+}
+.cart__decrease, .cart__increase, .cart__remove {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    justify-content: center;
+    align-items: center;
+}
+.cart__decrease {
+    color: #FFFFFF;
+    background-color: #0E49B5;
+    margin-left:15px;
+    margin-right: 12px;
+}
+.cart__increase {
+    color: #FFFFFF;
+    background-color: #0E49B5;
+    margin-left: 15px;
+    margin-right: 25px;
+}
+.cart__remove {
+    color: #F83245;
+    background-color: #FFFFFF;
+}
+.cart__total-price {
+    background: #EAF6FF;
+    width: 430px;
+    height: 50px;
+    padding: 17px 50px;
+    text-align: right;
+    font-size: 12px;
+    line-height: 14px;
+    color: #767272;
+}
+.cart__total-price span {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+.cart__button-buy {
+    width: 250px;
+    height: 50px;
+    background: #3C44B1;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border: 0;
+    margin: 20px 90px;
+}

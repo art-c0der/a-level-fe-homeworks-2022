@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple shop</title>
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+        <div id="loader" class="load loader__hidden">
+            <div  class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="header">
+            <div class="header__logo">
+                <img src="icons/image1.jpg">
+            </div>
+            <div id="svg" class="header__icon">
+                <div id="count"></div>
+            </div>
+            <div id="recycle" class="header__cart "></div>
+        </div>
+        <div class="banner">
+                                <!--Start carusel-->
+                    <div class="carusel">
+                        <!--Start carusel__box-->
+                        <ul class="carusel__box">
+                            <li class="carusel__item "><img src="./banners/air_pods_max_banner.jpg" alt=""></li>
+                            <li class="carusel__item "><img src="./banners/airpods_pro_banner.png" alt=""></li>
+                            <li class="carusel__item "><img src="./banners/apple_tv_banner.png" alt=""></li>
+                            <li class="carusel__item "><img src="./banners/ipad_air_banner.jpg" alt=""></li> 
+                            <li class="carusel__item "><img src="./banners/iphone_12_banner.jpg" alt=""></li> 
+                            <li class="carusel__item "><img src="./banners/mac_book_banner.jpg" alt=""></li>
+                            <li class="carusel__item "><img src="./banners/watch_banner.jpg" alt=""></li>
+                        </ul>
+                        <!--End carusel__box-->
+                        <!--Start carusel__controls-->
+                        <div class="carusel__controls">
+                        <div class="carusel__controls-left"></div>
+                        <div class="carusel__controls-right"></div>
+                        <div class="carusel__controls-points"></div>
+                        </div>
+                        <!--End carusel__controls-->
+                    </div>
+                    <!--End carusel-->
+        </div>
+        
+         <div class="search">
+                  <input type="search"  name="name" placeholder="Enter device name...">
+                
+                  <button type="submit" id="search__btn" class="search__btn"></button>
+                  <button type="submit" id="search__btn1" class="search__btn1"></button>
+                  <div id="filter" class="filter">
+                      <div class="filter__search">
+                            <div class="filter__category filter__cat">
+                                    <p>Category</p>
+                                    <select id="category" name="category">
+                                        <option value="category">All categories</option>
+                                        <option value="mac">Mac</option>
+                                        <option value="ipad">iPad</option>
+                                        <option value="Watch">Watch</option>
+                                        <option value="iphone">iPhone</option>
+                                        <option value="tv">TV</option>
+                                        <option value="airpods">airpods</option>
+                                    </select>
+                            </div>
+                            <div class="filter__category">
+                                <p>Stock</p>
+                                <select id="stock" name="stock">
+                                    <option value="inStock">In stock</option>
+                                    <option value="NotInStock">Not in stock</option>
+                                </select>
+                            </div>
+                        </div>
+                      <div class="filter__button">
+                          <button id="filter_btn">Filter results</button>
+                    </div>
+                  </div>
+                  <div id="settings" class="settings">
+                    <button id="default" class="settings__btn">Default</button>
+                    <button id="ascending" class="settings__btn settings__ascending"><div class="ascending"></div>Ascending</button>
+                    <button id="descending" class="settings__btn settings__ascending"><div class="descending"></div>Descending</button>
+                  </div>
+                  
+          </div>
+         <div class="wrapper">
+              
+              <aside id="aside" class="aside">
+              </aside>
+              <main id="content" class="wrapper__content">
+              </main>
+              <div  >
+                <div id="overlay" class="overlay"></div>
+                <div id="modal__window" class="modal__window"></div>
+              </div>
+        </div>
+    <script type="module" src="./functions/Carusel.js"></script>
+    <script  type="module" src="scripts.js"></script>
+    
+</body>
+</html>
+
+
