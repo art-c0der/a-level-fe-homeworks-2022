@@ -1,0 +1,15 @@
+1. 1 + 1 (number, 2)
+2. '1' + 1 (string, 11)
+3. 1 + [2] (string, 12)
+4. 1 + {} (string, 1[object Object])
+5. 2 - {} (number, NaN)
+6. +'a' (number, NaN)
+7. +'' (number, 0)
+8. +'-1' (number, -1)
+9. +{} (number, NaN)
+10. 1 + 'a' (string, 1a)
+11. 1 + {} (string, 1[object Object]) THE SAME WITH PARAGRAPH 4
+12. []+[] (string, empty value)
+13. 1 - 'a' (number, NaN)
+14. 1 - {} (number, NaN) THE SAME WITH PARAGRAPH 5
+15. [] - [] (number, 0)
