@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+		<title>TMNT</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="logo">
+					<a class="favicon logo-link" href="#">
+						<img src="img/logo.png" alt="logo" />
+					</a>
+				</div>
+				<nav class="navigation nav-menu">
+					<input type="checkbox" class="nav-inp" id="menu-toggle" />
+					<label class="menu-btn" for="menu-toggle">
+						<span></span>
+					</label>
+					<ul id="nav-list" class="nav-list"></ul>
+				</nav>
+			</header>
+			<main id="main">
+				<div id="preloader" class="preloader">
+					<div class="preloader__image"></div>
+				</div>
+				<div id="main-content" class="while-preload"></div>
+			</main>
+		</div>
+		<script type="module" src="js/app.js"></script>
+	</body>
+</html>

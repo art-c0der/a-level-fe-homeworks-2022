@@ -1,0 +1,288 @@
+*,
+*::before *::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	line-height: 1.777;
+	color: #fffcfc;
+	overflow-wrap: break-word;
+	background-color: #051025;
+}
+
+.wrapper {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+/*  HEADER + NAVIGATION*/
+.header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 20px;
+	position: relative;
+}
+
+.logo {
+	height: 60px;
+	margin-left: 20px;
+}
+
+.favicon {
+	border-radius: 15px;
+}
+
+.favicon > img {
+	height: 50px;
+	border-radius: 15px;
+	transition: all 0.3s ease-in-out;
+}
+
+.favicon > img:hover {
+	border: 1.5px solid #ffffff;
+	box-shadow: 0 0 15px #35960be6;
+	transform: scale(1.3);
+	transition: all 0.3s ease-in-out;
+}
+
+.navigation {
+	display: flex;
+	margin-right: 20px;
+}
+
+.nav-list {
+	list-style-type: none;
+	margin: 0;
+}
+
+.list-item {
+	padding-bottom: 12px;
+	transition: all 0.3s ease-in-out;
+}
+
+.list-item:hover {
+	transform: scale(1.3);
+}
+
+.list-item:hover > a {
+	color: #35960be6;
+	border: 1.5px solid #ffffff;
+	box-shadow: 0 0 15px;
+}
+.list-item > a {
+	transition: all 0.3s ease-in-out;
+	padding: 10px;
+	border-radius: 15px;
+	font-size: 16px;
+	color: #ffffffc7;
+	margin: 0 7px;
+	text-decoration: none;
+}
+
+.is-active {
+	color: #35960be6 !important;
+}
+
+/* INTERACTIVE MENU */
+.nav-inp {
+	position: absolute;
+	top: 0;
+	left: -9999999px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.menu-btn {
+	position: relative;
+	height: 15px;
+	width: 25px;
+}
+
+.menu-btn span {
+	height: 2px;
+	border-radius: 2px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	background: #15ac27;
+}
+
+.menu-btn::before,
+.menu-btn::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: #15ac27;
+	height: 2px;
+}
+
+.menu-btn::before {
+	top: 0;
+}
+
+.menu-btn::after {
+	bottom: 0;
+}
+
+.nav-inp:checked + label span {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nav-inp:checked + label::before {
+	transition: transform 0.3s ease-in;
+	transform: rotate(45deg);
+	top: 10px;
+}
+
+.nav-inp:checked + label::after {
+	transition: transform 0.3s ease-in;
+	transform: rotate(-45deg);
+	top: 10px;
+	bottom: auto;
+}
+
+.nav-list {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.07s ease-in;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #051025e8;
+	text-align: center;
+	padding: 15px 0;
+}
+
+.nav-list-hiden {
+	transition: opacity 0.07s ease-in;
+	opacity: 0;
+	visibility: hidden;
+}
+
+/* MAIN */
+.main-content {
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	padding-bottom: 20px;
+}
+
+.img-box {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+}
+
+.img-peronages {
+	width: 50%;
+}
+
+.img-about-all {
+	width: 100%;
+}
+.text-box {
+	padding: 10px 5px 0 10px;
+	color: #ffffff;
+	background-color: #ffffff29;
+}
+
+.text-box > h2 {
+	margin-bottom: 0;
+}
+
+/* PRELODER */
+.preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	z-index: 1001;
+}
+
+.preloader__image {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin-top: -32px;
+	background: url("./img/preloder.gif") no-repeat 50% 50%;
+}
+
+.loaded_hiding .preloader {
+	transition: 0.3s;
+	opacity: 0;
+}
+
+.loaded .preloader {
+	display: none;
+}
+
+.while-preload {
+	opacity: 0;
+	display: none;
+}
+
+@media (min-width: 800px) {
+	.logo {
+		height: 80px;
+	}
+
+	.menu-btn {
+		display: none;
+	}
+
+	.nav-list {
+		opacity: 1;
+		visibility: visible;
+		display: flex;
+		position: relative;
+		padding: 0;
+		background: #05102500;
+	}
+
+	.favicon > img {
+		height: 75px;
+	}
+
+	.main-content {
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
+
+	.img-box {
+		display: contents;
+	}
+
+	.img-peronages {
+		width: auto;
+		max-height: 80vh;
+	}
+
+	.img-about-all {
+		width: 100%;
+	}
+
+	.main-content-wrap {
+		flex-wrap: wrap;
+	}
+
+	.preloader__image {
+		margin-left: -32px;
+	}
+}
